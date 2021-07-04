@@ -162,7 +162,7 @@ func main() {
 			Channels:    channels,
 		}
 		ctx := context.Background() //
-		sg0, err := client0.SubscribeGateway(ctx, gi)
+		sg0, err := client0.Client.SubscribeGateway(ctx, gi)
 		if err != nil {
 			log.Printf("Synerex subscribe Error %v\n", err)
 		} else {
